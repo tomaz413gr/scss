@@ -6,7 +6,7 @@
 
     a:not(.logo--a) {
         font-family: "salsa";
-        font-size: 16px;
+        font-size: 1.0667rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.5;
@@ -18,7 +18,7 @@
         &:after {
             content: "";
             width: 0;
-            height: 2px;
+            height: .1333rem;
             background-color: $black;
             position: absolute;
             bottom: -3px;
@@ -46,7 +46,7 @@
     display: flex;
 
     &>.logo {
-        margin-right: 60px;
+        margin-right: 4rem;
     }
 
 
@@ -59,8 +59,13 @@
 
 
     a:not(:last-child) {
-        margin-right: 60px;
+        margin-right: 4rem;
     }
+    @media (max-width:768px) {
+    display: none;
+    };
+
+
 }
 
 .border {
@@ -68,4 +73,40 @@
     height: 1px;
     background-color: $black;
     opacity: .5;
+}
+
+.logo__svg {
+    height: 31px;
+    width: 100px;
+}
+
+.nav__a--order {
+    order: 2;
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+
+.burger {
+    display: none;
+    order: 2;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width:768px) {
+        display: block;
+        // order: 1;
+    }
+span {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: $black;
+   
+}
+
 }

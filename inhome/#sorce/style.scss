@@ -1,3 +1,7 @@
+html {
+    font-size: 15px;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Salsa:regular);
 @import "container";
 @import "normal";
@@ -7,5 +11,9 @@ body {
     color: #000;
 }
 @import "sprite";
+@import "btn";
+@import "intro";
+
+
 
 
