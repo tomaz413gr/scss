@@ -73,6 +73,7 @@
     height: 1px;
     background-color: $black;
     opacity: .5;
+    box-shadow: 2px 1px 1px #857e7e;
 }
 
 .logo__svg {
@@ -85,7 +86,19 @@
     @media (max-width:768px) {
         display: none;
     }
+
+    
 }
+
+// .nav__a--order:before {
+//     content: '';
+//     width: 27px;
+//     height: 27px;
+//     background-color: black;
+    
+    
+    
+// }
 
 .burger {
     display: none;

@@ -157,6 +157,7 @@ legend {
   height: 1px;
   background-color: #000;
   opacity: 0.5;
+  box-shadow: 2px 1px 1px #857e7e;
 }
 
 .logo__svg {
