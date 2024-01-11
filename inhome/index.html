@@ -20,10 +20,10 @@
                 d="M4.728 9.2C5.08 9.2 5.256 9.376 5.256 9.728V25.472C5.256 25.824 5.08 26 4.728 26H2.136C1.768 26 1.584 25.824 1.584 25.472V9.728C1.584 9.376 1.768 9.2 2.136 9.2H4.728ZM12.7232 9.2C13.1072 9.2 13.4272 9.216 13.6832 9.248C13.9392 9.28 14.1632 9.352 14.3552 9.464C14.5472 9.56 14.7312 9.704 14.9072 9.896C15.0832 10.072 15.2832 10.312 15.5072 10.616L24.4352 22.328C24.4992 22.44 24.6032 22.496 24.7472 22.496H24.9632C25.0912 22.496 25.1552 22.416 25.1552 22.256V9.728C25.1552 9.376 25.3312 9.2 25.6832 9.2H28.2032C28.5552 9.2 28.7312 9.376 28.7312 9.728V23.504C28.7312 24.48 28.5552 25.144 28.2032 25.496C27.8512 25.832 27.3072 26 26.5712 26H24.5072C24.1392 26 23.8272 25.984 23.5712 25.952C23.3312 25.92 23.1152 25.856 22.9232 25.76C22.7312 25.664 22.5392 25.528 22.3472 25.352C22.1712 25.16 21.9632 24.904 21.7232 24.584L12.7712 12.872C12.6752 12.76 12.5712 12.704 12.4592 12.704H12.2432C12.1152 12.704 12.0512 12.784 12.0512 12.944V25.472C12.0512 25.824 11.8752 26 11.5232 26H9.00319C8.63519 26 8.45119 25.824 8.45119 25.472V11.696C8.45119 10.72 8.62719 10.064 8.97919 9.728C9.33119 9.376 9.87519 9.2 10.6112 9.2H12.7232Z"
                 fill="#346161" />
         </symbol>
-        <!-- <symbol id="phone" viewBox="0 0 24 24">
+        <symbol id="phone" viewBox="0 0 24 24">
             <path
-                d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
-        </symbol> -->
+                d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+        </symbol>
     </svg>
 
 
@@ -49,7 +49,10 @@
                     </nav>
                 </div>
                 <!-- <svg class='svg__phone'><use xlink:href='#phone'></use></svg> -->
-                <a class="nav__a--order" href="tel:+7 800 454 22 22">+7 800 454 22 22</a>
+                <a class="nav__a--order" href="tel:+7 800 454 22 22">
+                    <img class="svg__phone" src="../css/img/phone_icon.svg" alt="">
+                    +7 800 454 22 22
+                </a>
 
                 <!-- Burger -->
 
@@ -70,15 +73,93 @@
     <div class="intro">
         <div class="container">
             <div class="intro__inner">
-                <img src="./img/intro_img.png" alt="intro_img">
+                <img src="../css/img/intro_img.png" alt="intro_img">
                 <div class="border"></div>
                 <div class="intro__title--box">
                     <h1>Строительство домов и коттеджей для вашей комфортной жизни</h1>
                     <button class="btn">Рассчитать стоимость</button>
                 </div>
+                <div class="border"></div>
             </div>
         </div>
     </div>
+
+    <!-- PROJECTS -->
+
+    <section class="projects">
+        <div class="container">
+            <div class="border"></div>
+            <div class="projects__title--wrapper">
+                <div class="project__title">
+                    <h1>Наши проекты</h1>
+                    <p>Построили более 300 домов за 27 лет работы</p>
+                </div>
+                <div class="btn--box"><button class="btn">Все проекты</button></div>
+                <div class="case">
+                    <p>[кейсы]</p>
+                </div>
+            </div>
+            <div class="border"></div>
+
+            <!-- SLIDERS -->
+
+            <div class="sliders__wrapper">
+                <div class="slider__info">
+                    <div class="slider__info--box">
+                        <h3>Коттедж Лиана</h3>
+                        <p>5 спален, 590 м²</p>
+                    </div>
+                    <div class="border"></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="slider">
+            <div class="slider__item">
+                <div class="slider__wrapper">
+                    <img src="../css/img/slider1_img1.png" alt="">
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__wrapper">
+                    <img src="../css/img/slider1_img2.png" alt="">
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__wrapper">
+                    <img src="../css/img/slider1_img1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
