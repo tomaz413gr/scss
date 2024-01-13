@@ -4,18 +4,26 @@
     padding: 6.6667rem 0;
 }
 
-.projects__title--wrapper {
-    display: flex;
-    padding: 2rem 0;
-
-}
 .btn--box {
     flex-grow: 1;
 }
 
-.project__title {
+.projects__title {
     // width: 50%;
     flex-grow: 2;
+
+    &--wrapper {
+        display: flex;
+        padding: 2rem 0;
+
+        @media (max-width:66.1333rem) {
+display: block;
+.btn {
+    margin-top: 20px;
+}
+        }
+
+    }
 
     h1 {
         color: $white;
@@ -28,7 +36,7 @@
 
     p {
         color: $white;
-        font-size: 21px;
+        font-size: 1.4rem;
         font-weight: 400;
         line-height: 150%;
         /* 31.5px */
@@ -39,12 +47,12 @@
 
 .case {
     flex-grow: 1;
+
     p {
         text-align: end;
         color: $gray;
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 400;
         line-height: 150%;
-        /* 27px */
     }
 }

@@ -8,25 +8,15 @@ $(document).ready(function () {
         speed: 300,
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows: true
-        // responsive: [
-        //     {
-        //         breakpoint: 1200,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             arrows: false,
-        //             dots: false
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 800,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             arrows: false,
-        //             dots: true
-        //         }
-        //     }
-        // ]
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
 })
