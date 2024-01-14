@@ -336,7 +336,7 @@ body {
 
 .sliders__wrapper {
   display: flex;
-  margin: 40px 0;
+  margin: 2.6667rem 0;
 }
 
 .container_slider {
@@ -354,14 +354,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 94rem) {
+@media (max-width: 1505px) {
   .slider__info {
     display: none;
   }
 }
 .slider__info h3 {
   color: #fff;
-  font-size: 21px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
@@ -369,24 +369,36 @@ body {
 }
 .slider__info p {
   color: #868686;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  padding-bottom: 40px;
+  padding-bottom: 2.6667rem;
 }
 .slider__info > .border {
   display: inline-block;
-  width: 1px;
+  width: 0.0667rem;
   height: 100%;
   background-color: #000;
   opacity: 0.5;
-  box-shadow: 2px 1px 1px #857e7e;
+  box-shadow: 0.1333rem 0.0667rem 0.0667rem #857e7e;
 }
 .slider__info--box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.slider__info.toggle {
+  display: none;
+}
+@media (max-width: 1505px) {
+  .slider__info.toggle {
+    display: block;
+    width: 100%;
+  }
+  .slider__info.toggle p {
+    padding-bottom: 1.3333rem;
+  }
 }
 
 .slick-list {
@@ -402,7 +414,7 @@ body {
 }
 
 .slider__item {
-  padding-left: 30px;
+  padding-left: 2rem;
 }
 @media (max-width: 1410px) {
   .slider__item {
@@ -410,15 +422,13 @@ body {
   }
 }
 
-.slider__wrapper {
-  border-radius: 20px;
-  overflow: hidden;
-}
 .slider__wrapper img {
   width: 100%;
   object-fit: cover;
+  border-radius: 1.3333rem;
+  overflow: hidden;
 }
-@media (max-width: 1504.9995px) {
+@media (max-width: 1505px) {
   .slider__wrapper {
     width: 34.8667rem;
     height: auto;
@@ -432,11 +442,11 @@ body {
 }
 
 .slick-arrow {
-  width: 50px;
-  height: 16px;
+  width: 3.3333rem;
+  height: 1.0667rem;
   background-color: transparent;
-  border-radius: 20px;
-  border: 1px #868686 solid;
+  border-radius: 1.3333rem;
+  border: 0.0667rem #868686 solid;
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -448,7 +458,7 @@ body {
   background: url(/inhome/img/leftarrow.svg) center center no-repeat;
   transition: background-image 0.3s linear, border-color 0.3s linear;
 }
-@media (max-width: 1504.9995px) {
+@media (max-width: 1505px) {
   .slick-arrow.slick-prev {
     left: 0%;
     top: 48%;
@@ -464,7 +474,7 @@ body {
   background: url(/inhome/img/rightarrow.svg) center center no-repeat;
   transition: background-image 0.3s linear, border-color 0.3s linear;
 }
-@media (max-width: 1504.9995px) {
+@media (max-width: 1505px) {
   .slick-arrow.slick-next {
     right: 0%;
     top: 48%;

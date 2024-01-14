@@ -11,7 +11,7 @@ $(document).ready(function () {
         arrows: true,
         responsive: [
             {
-                breakpoint: 1505,
+                breakpoint: 1506,
                 settings: {
                     slidesToShow: 1,
                 }
