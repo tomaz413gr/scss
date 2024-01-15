@@ -3,11 +3,16 @@
     background-color: $bg;
     margin-top: 6.6667rem;
 
+    .border {
+        margin-bottom: 1.7333rem;
+    }
+
 
 }
 
 .about__title {
     display: flex;
+    margin-bottom: 3.3333rem;
 
     h1 {
         color: $black;
@@ -27,8 +32,57 @@
         line-height: 150%;
         flex-basis: 40%;
         text-align: end;
-        @media (max-width:480px) {
-        
+
+        @media (max-width:480px) {}
+    }
+}
+
+.about__text {
+    display: flex;
+    margin-bottom: 6.2%;
+
+    p {
+        color: $graydark;
+        font-size: clamp(0.933rem, 0.88rem + 0.27vw, 1.2rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        flex-basis: 40%;
+
+        &:first-child {
+            flex-basis: 60%;
+            margin-right: 8%;
+            padding-left: 21%;
+        }
+
+        &:last-child {
+            padding-right: 5%;
+        }
+    }
+}
+
+.about__info {
+    display: flex;
+
+    .about__border {
+        background-color: $border;
+        width: .0667rem;
+        height: 11rem;
+        margin: 0 2.2%;
+    }
+
+    .about__info--item {
+        flex-basis: 16%;
+        padding: 0 1.5% 3.6%;
+
+        h2 {
+            color: $bluelight;
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+            text-transform: uppercase;
+            
         }
     }
 }
