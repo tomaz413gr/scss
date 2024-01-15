@@ -566,4 +566,32 @@ body {
 }
 .slick-dots li.slick-active button li.slick-active button {
   background-color: #fff;
+}
+
+.about {
+  padding: 6.6667rem 0 2.6667rem;
+  background-color: #EBEBEB;
+  margin-top: 6.6667rem;
+}
+
+.about__title {
+  display: flex;
+}
+.about__title h1 {
+  color: #000;
+  font-size: clamp(1.125rem, 0.975rem + 0.75vw, 1.875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  text-transform: uppercase;
+  flex-basis: 60%;
+}
+.about__title p {
+  color: #868686;
+  font-size: clamp(0.625rem, 0.525rem + 0.5vw, 1.125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  flex-basis: 40%;
+  text-align: end;
 }/*# sourceMappingURL=style.css.map */
