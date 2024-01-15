@@ -45,12 +45,15 @@
     @media (max-width:1090px) {
         display: block;
     }
+
     @media (max-width:600px) {
-    margin: 1rem 0;
+        margin: 1rem 0;
     }
 
     .btn {
-        margin-left: 5.2rem;
+        @media (max-width:1090px) {
+            margin-top: 1rem;
+        }
 
         @media (max-width:600px) {
             padding: .4333em 1.4em;
@@ -59,7 +62,13 @@
 
         @media (max-width:480px) {
             padding: .2333em .7em;
+            margin: .5rem 0;
+            font-size: .8rem;
         }
     }
+
+
+
+
 
 }

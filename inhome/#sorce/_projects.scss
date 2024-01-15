@@ -2,6 +2,7 @@
     background-color: $graydark;
     margin-top: 6.6667rem;
     padding: 6.6667rem 0;
+
     @media (max-width:1200px) {
         margin-top: 1.6667rem;
         padding: 1.6667rem 0;
@@ -13,21 +14,25 @@
 }
 
 .projects__title {
-    // width: 50%;
     flex-grow: 2;
 
     &--wrapper {
         display: flex;
         padding: 2rem 0;
 
-        @media (max-width:66.1333rem) {
-display: block;
-.btn {
-    margin-top: 20px;
-    @media (max-width:600px) {
-        padding: 0.4333em 1.4em;
-    }
-}
+        @media (max-width:992px) {
+            display: block;
+
+            .btn {
+                margin-top: 20px;
+
+                @media (max-width:600px) {
+                    padding: 0.4333em 1.4em;
+                }
+                @media (max-width:480px) {
+                font-size: .8rem;
+                }
+            }
         }
 
     }
