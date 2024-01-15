@@ -2,6 +2,10 @@
     background-color: $graydark;
     margin-top: 6.6667rem;
     padding: 6.6667rem 0;
+    @media (max-width:1200px) {
+        margin-top: 1.6667rem;
+        padding: 1.6667rem 0;
+    }
 }
 
 .btn--box {
@@ -20,6 +24,9 @@
 display: block;
 .btn {
     margin-top: 20px;
+    @media (max-width:600px) {
+        padding: 0.4333em 1.4em;
+    }
 }
         }
 

@@ -17,10 +17,11 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 760,
+                breakpoint: 840,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false
+                    arrows: false,
+                    dots:true
                 }
             }
         ]

@@ -1,6 +1,17 @@
 .sliders__wrapper {
     display: flex;
     margin: 2.6667rem 0;
+
+    @media (max-width:840px) {
+        margin: 40px 0 80px 0;
+    }
+    @media (max-width:550px) {
+        margin: 20px 0 60px 0;
+    }
+    @media (max-width:360px) {
+        margin: 10px 0 40px 0;
+    }
+
 }
 
 .container_slider {
@@ -13,17 +24,22 @@
 
 }
 
+// .slider__info .border {
+//     @media (max-width:760px) {
+//             margin-top: 100px;
+//     }
+// }
+
 .slider__info {
     width: 30vw;
     display: flex;
     justify-content: space-between;
 
+
+
     @media (max-width:1505px) {
         display: none;
     }
-
-    ;
-
 
     h3 {
         color: $white;
@@ -97,7 +113,7 @@
 }
 
 .slider__wrapper {
-    
+
     img {
         width: 100%;
         object-fit: cover;
@@ -123,11 +139,17 @@
     background-color: transparent;
     border-radius: 1.3333rem;
     border: .0667rem $gray solid;
-
     position: absolute;
     top: 50%;
     z-index: 10;
     font-size: 0;
+
+    @media (max-width:1505px) {
+        width: 5.0333rem;
+        height: 1.5667rem;
+    }
+
+    ;
 
     &.slick-prev {
         left: -42.7%;
@@ -137,7 +159,7 @@
 
         @media (max-width:1505px) {
             left: 0%;
-            top: 48%;
+            top: 54%;
         }
 
         &:hover {
@@ -155,7 +177,7 @@
 
         @media (max-width:1505px) {
             right: 0%;
-            top: 48%;
+            top: 54%;
         }
 
 
@@ -163,6 +185,45 @@
             background: url(/inhome/img/rightarrow_white.svg) center center no-repeat;
             border-color: white;
         }
+    }
+
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+        list-style: none;
+        padding: 0 8px;
+
+    }
+
+    button {
+        width: 10px;
+        height: 10px;
+        font-size: 0;
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        border: solid 1px #fff;
+
+    }
+
+    li.slick-active button {
+        background-color: #fff;
+
+        li.slick-active button {
+            background-color: #fff;
+
+        }
+
     }
 
 }
