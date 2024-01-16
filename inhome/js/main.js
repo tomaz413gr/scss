@@ -21,10 +21,22 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
-                    dots:true
+                    dots: true
                 }
             }
         ]
     });
+
+
+    
+    $('.slider__why').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+    })
+
 
 })

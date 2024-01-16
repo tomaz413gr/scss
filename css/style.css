@@ -301,7 +301,7 @@ body {
 .projects {
   background-color: #484848;
   margin-top: 6.6667rem;
-  padding: 6.6667rem 0;
+  padding: 6.2% 0;
 }
 @media (max-width: 1200px) {
   .projects {
@@ -569,9 +569,8 @@ body {
 }
 
 .about {
-  padding: 6.6667rem 0 2.6667rem;
+  padding: 6.2% 0 40px;
   background-color: #EBEBEB;
-  margin-top: 6.6667rem;
 }
 .about .border {
   margin-bottom: 1.7333rem;
@@ -658,6 +657,11 @@ body {
 .about__info {
   display: flex;
 }
+@media (max-width: 800px) {
+  .about__info {
+    display: none;
+  }
+}
 .about__info .about__border {
   background-color: #A2A2A2;
   width: 0.0667rem;
@@ -669,6 +673,80 @@ body {
   padding: 0 1.5% 3.6%;
 }
 .about__info .about__info--item h2 {
+  color: #346161;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+/* slider__why */
+.slider__why {
+  display: none;
+}
+@media (max-width: 800px) {
+  .slider__why {
+    display: block;
+  }
+}
+
+.slider__why {
+  position: relative;
+  padding-bottom: 4rem;
+}
+.slider__why .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider__why .slick-dots li {
+  list-style: none;
+  padding: 0 0.5333rem;
+}
+.slider__why .slick-dots button {
+  width: 0.6667rem;
+  height: 0.6667rem;
+  font-size: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  border: solid 0.0667rem #000;
+}
+.slider__why .slick-dots li.slick-active button {
+  transition: background-color 0.3s linear;
+  background-color: #000;
+}
+
+.why__itemList {
+  text-align: -webkit-center;
+}
+
+.why__oreol {
+  height: 7.5333rem;
+  width: 7.5333rem;
+  border-radius: 6rem;
+  border: 0.0667rem solid #6C7188;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.4667rem;
+}
+
+.circle__info {
+  width: 18.6667rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  padding: 0 2rem;
+}
+
+.oreol__content {
   color: #346161;
   font-size: 2.4rem;
   font-style: normal;

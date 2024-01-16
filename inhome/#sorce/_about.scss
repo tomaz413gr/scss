@@ -1,7 +1,7 @@
 .about {
-    padding: 6.6667rem 0 2.6667rem;
+    padding: 6.2% 0 40px;
     background-color: $bg;
-    margin-top: 6.6667rem;
+    
 
     .border {
         margin-bottom: 1.7333rem;
@@ -92,6 +92,9 @@
 
 .about__info {
     display: flex;
+    @media (max-width:800px) {
+        display: none;
+    }
 
     .about__border {
         background-color: $border;
