@@ -1,7 +1,7 @@
 .about {
     padding: 6.2% 0 40px;
     background-color: $bg;
-    
+
 
     .border {
         margin-bottom: 1.7333rem;
@@ -47,6 +47,7 @@
             display: none;
         }
     }
+
 }
 
 .about__text {
@@ -92,6 +93,7 @@
 
 .about__info {
     display: flex;
+
     @media (max-width:800px) {
         display: none;
     }
@@ -118,9 +120,22 @@
         }
     }
 }
+
 .home__photo {
     margin-bottom: 6.2%;
+
+
     img {
         width: 100%;
+
+        @media (max-width: 550px) {
+            height: 21rem;
+            object-fit: cover;
+            border-radius: 1.3333rem;
+            overflow: hidden;
+        }
     }
+
+
+
 }

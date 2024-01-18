@@ -38,5 +38,15 @@ $(document).ready(function () {
         arrows: false
     })
 
+    // slider__video
+
+    $('.slider__video').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+    })
 
 })
