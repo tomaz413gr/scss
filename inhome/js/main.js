@@ -9,6 +9,8 @@ $(document).ready(function () {
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: true,
+        autoplay:true,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 1506,
@@ -43,10 +45,12 @@ $(document).ready(function () {
     $('.slider__video').slick({
         dots: false,
         infinite: true,
-        speed: 300,
+        speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrows: true,
+        autoplay:true,
+        autoplaySpeed: 3000
     })
 
 })
